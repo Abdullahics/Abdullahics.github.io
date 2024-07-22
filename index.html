@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHTECK</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FlashTeck</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">faq</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">adress page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header style="background: url('assets/main.png') no-repeat center center; background-size: cover; color: blue; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);" class="text-white text-center py-5">
+    <div class="container">
+        <h1>Welcome to Our Company</h1>
+        <p class="lead">We deliver quality and excellence</p>
+    </div>
+</header>
+
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center">About Us</h2>
+        <p class="lead text-center">Our company is committed to providing top-notch services to our clients. Here are some key statistics about our company:</p>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Metric</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Years in Business</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Employees</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Projects Completed</td>
+                        <td>250+</td>
+                    </tr>
+                    <tr>
+                        <td>Satisfied Clients</td>
+                        <td>200+</td>
+                    </tr>
+                    <tr>
+                        <td>Global Offices</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <p class="text-center">Our dedicated team works around the clock to ensure client satisfaction and deliver quality services. We have a proven track record of success and are committed to maintaining the highest standards of excellence.</p>
+    </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-cogs fa-3x"></i>
+                    <h3>Consulting</h3>
+                    <p>Our expert consultants help you navigate complex business challenges.</p>
+                    <a href="services.html#consulting" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-cloud fa-3x"></i>
+                    <h3>Cloud Services</h3>
+                    <p>We offer scalable cloud solutions tailored to your business needs.</p>
+                    <a href="services.html#cloud" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-shield-alt fa-3x"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business with our comprehensive cybersecurity services.</p>
+                    <a href="services.html#cybersecurity" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Team Section -->
+<section id="team" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Our Team</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="assets/person2.jpeg" class="img-fluid rounded-circle" alt="Team Member">
+                    <h4>John Doe</h4>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="assets/abdi.jpeg" class="img-fluid rounded-circle" alt="Team Member">
+                    <h4>Jane Smith</h4>
+                    <p>CTO</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="assets/person1.jpeg" class="img-fluid rounded-circle" alt="Team Member">
+                    <h4>Mike Johnson</h4>
+                    <p>CFO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <div id="formMessage" class="mt-3" style="display: none;">
+            <div class="alert alert-success" role="alert">
+                Your message has been sent successfully!
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center">FAQ</h2>
+        <div class="faq-item">
+            <button class="btn btn-link" onclick="toggleFaq('faq1')">What services do you offer?</button>
+            <div id="faq1" class="faq-answer" style="display: none;">
+                <p>We offer consulting, cloud services, and cybersecurity solutions.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="btn btn-link" onclick="toggleFaq('faq2')">How can I contact you?</button>
+            <div id="faq2" class="faq-answer" style="display: none;">
+                <p>You can contact us through the form in the Contact Us section.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function validateForm() {
+        // Get form elements
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        // Basic validation checks
+        if (name === '' || email === '' || message === '') {
+            alert('All fields are required!');
+            return false;
+        }
+
+        // If validation passes, show success message
+        document.getElementById('formMessage').style.display = 'block';
+alert("data submitted successfully ");
+        // Clear the form fields
+        document.getElementById('contactForm').reset();
+
+        // Prevent actual form submission
+        return false;
+    }
+</script>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary" style="display: none; position: fixed; bottom: 20px; right: 20px;">Top</button>
+
+<section id="changeColor" class="py-5">
+    <div class="container text-center">
+        <h2>Change Background Color</h2>
+        <button onclick="changeBgColor()" class="btn btn-secondary">Change Color</button>
+    </div>
+</section>
+
+<script>
+    // Show the button when the user scrolls down 20px from the top
+window.onscroll = function() {
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleFaq(id) {
+    var faqAnswer = document.getElementById(id);
+    if (faqAnswer.style.display === "none") {
+        faqAnswer.style.display = "block";
+    } else {
+        faqAnswer.style.display = "none";
+    }
+}
+
+function changeBgColor() {
+    var section = document.getElementById("changeColor");
+    var currentColor = section.style.backgroundColor;
+    section.style.backgroundColor = currentColor === 'lightblue' ? 'lightcoral' : 'lightblue';
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FlashTeck</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">faq</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">adress page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Contact Us Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Our Address</h4>
+                    <p>123 Nairobi Business Lane, Suite 100<br>
+                    City, State, ZIP = 00100 Eastleigh <br>
+                    Kenya</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Phone</h4>
+                    <p><i class="fa fa-phone"></i> (254) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Email</h4>
+                    <p><i class="fa fa-envelope"></i> abdi@flashteck.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h4 class="text-center">Get in Touch</h4>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <div id="formResponse" class="mt-3"></div>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map mt-5">
+            <h4 class="text-center">Find Us</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8402651390656!2d-122.41941838468122!3d37.77492927975839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858065c228fbbd%3A0x84f27e6c4ddde1d!2s123%20Business%20Lane%2C%20Suite%20100%2C%20San%20Francisco%2C%20CA%2094122%2C%20USA!5e0!3m2!1sen!2sus!4v1624469402657!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Form Validation -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && message) {
+        document.getElementById('formResponse').innerHTML = '<div class="alert alert-success">Thank you, ' + name + '! Your message has been sent successfully.</div>';
+        this.reset(); // Reset form fields
+    } else {
+        document.getElementById('formResponse').innerHTML = '<div class="alert alert-danger">Please fill out all fields.</div>';
+    }
+});
+</script>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
